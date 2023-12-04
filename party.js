@@ -23,7 +23,9 @@ render();
 // creating function to get from API to JS
 async function getEvents() {
   try {
-    const response = await fetch(API_URL); // accessing API_URL
+    const response = await fetch(API_URL, {
+      method: "GET",
+    }); // accessing API_URL via GET method
     const json = await response.json(); // formatting fetched data to json format
     const events = json.data; // collecting specifically the event data from the fetched url
     state.events = events; // replacing the object array with what's in json's data.
