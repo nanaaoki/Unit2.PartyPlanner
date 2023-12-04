@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Time!</title>
+  <link rel="stylesheet" href="party.css" />
+  <script defer src="party.js"></script>
+</head>
+
+<body>
+  <h1>Party Time!</h1>
+  <form id="addEventForm">
+    <label>
+      Name
+      <input type="text" name="name" />
+    </label>
+    <label>
+      Date and Time
+      <input type="datetime-local" name="date" />
+    </label>
+    <label>
+      Location
+      <input type="text" name="location" />
+    </label>
+    <label>
+      Description
+      <input type="text" name="description" />
+    </label>
+
+    <button id="event-button">Add Event</button>
+  </form>
+
+  <a class="eventBox"></a>
+
+  <div>
+    <ul id="event-list"></ul>
+  </div>
+  </a>
+</body>
+
+</html>
